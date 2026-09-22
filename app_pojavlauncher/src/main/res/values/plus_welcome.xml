@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- REMON LAUNCHER — Welcome -->
+<!-- REMON LAUNCHER - Welcome -->
 <resources>
     <string name="plus_welcome_title">REMON LAUNCHER</string>
-    <string name="plus_welcome_subtitle">BY REMON FRANCIS  ·  MADE FOR YOU</string>
+    <string name="plus_welcome_subtitle">BY REMON FRANCIS  -  MADE FOR YOU</string>
     <string name="plus_welcome_hero">Thank you for choosing\nREMON LAUNCHER!</string>
     <string name="plus_welcome_intro">Your launcher is ready. Here is everything you need to know before you play.</string>
     <string name="plus_welcome_kicker">BEFORE YOU PLAY</string>
     <string name="plus_welcome_cancel">Cancel</string>
-    <string name="plus_welcome_cancel_symbol">✕</string>
+    <string name="plus_welcome_cancel_symbol">X</string>
     <string name="plus_welcome_continue">START THE QUICK TOUR</string>
-    <string name="plus_welcome_note">You can reopen this from Settings → About at any time.</string>
+    <string name="plus_welcome_note">You can reopen this from Settings - About at any time.</string>
 
-    <string name="plus_welcome_body">Your launcher is ready. Here is everything you need to know before you play:\n\n• ACCOUNTS — sign in with Microsoft, Ely.by, or play offline.\n• PROFILES — every Minecraft version from 1.8 to 1.21+, plus Forge, Fabric, Quilt, OptiFine and full modpacks.\n• PERFORMANCE — Normal, Performance or Maximum from Settings.\n• CONTROLS — fully customizable on-screen buttons and joystick.\n• UPDATES — the launcher updates itself in-app.</string>
+    <string name="plus_welcome_body">Your launcher is ready. Here is everything you need to know before you play:\n\n• ACCOUNTS - sign in with Microsoft, Ely.by, or play offline.\n• PROFILES - every Minecraft version from 1.8 to 1.21+, plus Forge, Fabric, Quilt, OptiFine and full modpacks.\n• PERFORMANCE - Normal, Performance or Maximum from Settings.\n• CONTROLS - fully customizable on-screen buttons and joystick.\n• UPDATES - the launcher updates itself in-app.</string>
 
     <string name="plus_welcome_g_accounts">A</string>
     <string name="plus_welcome_t_accounts">Accounts</string>
     <string name="plus_welcome_d_accounts">Sign in with Microsoft or Ely.by, or play offline. Switch accounts from the chip at the top of Home.</string>
 
     <string name="plus_welcome_g_profiles">P</string>
-    <string name="plus_welcome_t_profiles">Profiles & instances</string>
+    <string name="plus_welcome_t_profiles">Profiles and instances</string>
     <string name="plus_welcome_d_profiles">Every Minecraft version from 1.8 to 1.21+, plus Forge, Fabric, Quilt, OptiFine and full modpacks.</string>
 
     <string name="plus_welcome_g_perf">F</string>
@@ -27,13 +27,13 @@
 
     <string name="plus_welcome_g_controls">C</string>
     <string name="plus_welcome_t_controls">Controls</string>
-    <string name="plus_welcome_d_controls">Fully customizable on-screen buttons, joystick and custom commands — open Control Customization from the left dock.</string>
+    <string name="plus_welcome_d_controls">Fully customizable on-screen buttons, joystick and custom commands - open Control Customization from the left dock.</string>
 
     <string name="plus_welcome_g_updates">U</string>
     <string name="plus_welcome_t_updates">Updates</string>
     <string name="plus_welcome_d_updates">The launcher updates itself in-app; you will be told the moment a new release lands.</string>
 
-    <string name="plus_welcome_chip_versions">1.8 → 1.21+  ·  every version</string>
-    <string name="plus_welcome_chip_mods">Forge · Fabric · Quilt · OptiFine</string>
-    <string name="plus_welcome_chip_control">Custom controls & FPS HUD</string>
+    <string name="plus_welcome_chip_versions">1.8 to 1.21+  -  every version</string>
+    <string name="plus_welcome_chip_mods">Forge - Fabric - Quilt - OptiFine</string>
+    <string name="plus_welcome_chip_control">Custom controls and FPS HUD</string>
 </resources>
