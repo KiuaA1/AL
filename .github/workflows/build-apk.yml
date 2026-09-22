@@ -32,19 +32,14 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
         with:
-          accept-android-sdk-licenses: true
-          packages: ''
+          packages: 'platform-tools platforms;android-34 build-tools;34.0.0'
 
-      - name: Install required SDK packages
-        run: |
-          sdkmanager --install \
-            "platforms;android-34" \
-            "build-tools;34.0.0" \
-            "ndk;27.3.13750724" \
-            "cmake;3.22.1" \
-            "platform-tools"
-          echo "ANDROID_NDK_HOME=$ANDROID_HOME/ndk/27.3.13750724" >> $GITHUB_ENV
-          echo "ANDROID_HOME=$ANDROID_HOME" >> $GITHUB_ENV
+      - name: Install NDK
+        uses: nttld/setup-ndk@v1
+        id: setup-ndk
+        with:
+          ndk-version: r27c
+          link-to-sdk: true
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
@@ -53,6 +48,7 @@ jobs:
         run: |
           ./gradlew :app_pojavlauncher:assembleRelease --stacktrace --no-daemon
         env:
+          ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
           CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY || 'DUMMY' }}
 
       - name: Find and list APK
@@ -69,13 +65,3 @@ jobs:
             app_pojavlauncher/build/outputs/apk/release/*.apk
           if-no-files-found: error
           retention-days: 14
-
-      - name: Upload mapping (if any)
-        uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: mapping-files
-          path: |
-            app_pojavlauncher/build/outputs/mapping/**
-          if-no-files-found: ignore
-          retention-days: 7
