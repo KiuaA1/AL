@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- ═══════════════════════════════════════════════════════════════════
-     ABOUT — "BUILD MANIFEST" (Phase 9 redesign)
-     Top status bar (back · title · version key-cap), then a two-column
-     dossier: LEFT fixed identity card (logo, name, tagline, channel
-     links), RIGHT scrolling manifest with numbered sections —
-     01 TEAM (2×2 tiles) · 02 LINEAGE (Pojav / Amethyst) · 03 LEGAL.
-     Ids used by AboutFragment preserved (about_*).
-     ═══════════════════════════════════════════════════════════════════ -->
+<!-- ABOUT — REMON LAUNCHER -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -14,7 +7,6 @@
     android:background="@drawable/au9_page"
     android:orientation="vertical">
 
-    <!-- status bar -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -32,7 +24,7 @@
             android:gravity="center"
             android:letterSpacing="0.06"
             android:paddingHorizontal="12dp"
-            android:text="←  BACK"
+            android:text="BACK"
             android:textColor="#E6E9EF"
             android:textSize="10.5sp" />
 
@@ -43,7 +35,7 @@
             android:layout_weight="1"
             android:fontFamily="sans-serif-medium"
             android:letterSpacing="0.14"
-            android:text="BUILD MANIFEST  ·  ABOUT"
+            android:text="ABOUT  -  REMON LAUNCHER"
             android:textColor="#8A909C"
             android:textSize="10sp" />
 
@@ -68,7 +60,6 @@
         android:orientation="horizontal"
         android:padding="14dp">
 
-        <!-- ── LEFT: identity card ── -->
         <LinearLayout
             android:id="@+id/about_hero_card"
             android:layout_width="236dp"
@@ -106,7 +97,7 @@
                 android:layout_marginTop="3dp"
                 android:fontFamily="monospace"
                 android:letterSpacing="0.1"
-                android:text="@string/cs_about_tagline"
+                android:text="BY REMON FRANCIS"
                 android:textColor="#8A909C"
                 android:textSize="9sp" />
 
@@ -127,10 +118,7 @@
                 android:textColor="#6B7180"
                 android:textSize="9sp" />
 
-            <LinearLayout
-                android:id="@+id/about_link_discord"
-                style="@style/AbLink">
-
+            <LinearLayout android:id="@+id/about_link_discord" style="@style/AbLink">
                 <ImageView style="@style/AbLinkIcon" android:src="@drawable/ic_discord" />
                 <LinearLayout style="@style/AbLinkTextCol">
                     <TextView style="@style/AbLinkTitle" android:text="@string/cs_about_discord_title" />
@@ -139,10 +127,7 @@
                 <TextView style="@style/AbLinkArrow" />
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/about_link_website"
-                style="@style/AbLink">
-
+            <LinearLayout android:id="@+id/about_link_website" style="@style/AbLink">
                 <ImageView style="@style/AbLinkIcon" android:src="@drawable/ic_website_orbit" />
                 <LinearLayout style="@style/AbLinkTextCol">
                     <TextView style="@style/AbLinkTitle" android:text="@string/cs_about_website_title" />
@@ -151,10 +136,7 @@
                 <TextView style="@style/AbLinkArrow" />
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/about_link_github"
-                style="@style/AbLink">
-
+            <LinearLayout android:id="@+id/about_link_github" style="@style/AbLink">
                 <ImageView style="@style/AbLinkIcon" android:src="@drawable/ic_github" />
                 <LinearLayout style="@style/AbLinkTextCol">
                     <TextView style="@style/AbLinkTitle" android:text="@string/cs_about_github_title" />
@@ -163,21 +145,17 @@
                 <TextView style="@style/AbLinkArrow" />
             </LinearLayout>
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
+            <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="monospace"
-                android:text="@string/cs_about_footer"
+                android:text="REMON FRANCIS - MADE WITH PASSION"
                 android:textColor="#4F5460"
                 android:textSize="8.5sp" />
         </LinearLayout>
 
-        <!-- ── RIGHT: manifest ── -->
         <ScrollView
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -192,66 +170,21 @@
                 android:orientation="vertical"
                 android:paddingBottom="12dp">
 
-                <!-- 01 TEAM -->
+                <!-- 01 DEVELOPER -->
                 <LinearLayout style="@style/AbSectionHead">
                     <TextView style="@style/AbIndex" android:text="01" />
-                    <TextView android:id="@+id/about_credits_heading" style="@style/AbSectionTitle" android:text="Team" />
+                    <TextView android:id="@+id/about_credits_heading" style="@style/AbSectionTitle" android:text="Developer" />
                     <View style="@style/AbRule" />
-                    <TextView style="@style/AbSectionMeta" android:text="CRAFT STUDIO" />
+                    <TextView style="@style/AbSectionMeta" android:text="REMON LAUNCHER" />
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:baselineAligned="false"
-                    android:orientation="horizontal">
-
-                    <LinearLayout style="@style/AbTeamTile" android:layout_marginEnd="5dp">
-                        <FrameLayout style="@style/AbAvatarRing">
-                            <net.kdt.pojavlaunch.ui.AvatarView style="@style/AbAvatar" android:src="@drawable/cs_team_rohit" />
-                        </FrameLayout>
-                        <LinearLayout style="@style/AbTeamTextCol">
-                            <TextView style="@style/AbTeamName" android:text="ROHIT_45" />
-                            <TextView style="@style/AbTeamRole" android:text="LEAD DEVELOPER" />
-                        </LinearLayout>
-                    </LinearLayout>
-
-                    <LinearLayout style="@style/AbTeamTile" android:layout_marginStart="5dp">
-                        <FrameLayout style="@style/AbAvatarRing">
-                            <net.kdt.pojavlaunch.ui.AvatarView style="@style/AbAvatar" android:src="@drawable/cs_team_notdanger" />
-                        </FrameLayout>
-                        <LinearLayout style="@style/AbTeamTextCol">
-                            <TextView style="@style/AbTeamName" android:text="NOT DANGER" />
-                            <TextView style="@style/AbTeamRole" android:text="FOUNDER" />
-                        </LinearLayout>
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:baselineAligned="false"
-                    android:orientation="horizontal">
-
-                    <LinearLayout style="@style/AbTeamTile" android:layout_marginEnd="5dp">
-                        <FrameLayout style="@style/AbAvatarRing">
-                            <net.kdt.pojavlaunch.ui.AvatarView style="@style/AbAvatar" android:src="@drawable/cs_team_mineradi" />
-                        </FrameLayout>
-                        <LinearLayout style="@style/AbTeamTextCol">
-                            <TextView style="@style/AbTeamName" android:text="MINER_ADI" />
-                            <TextView style="@style/AbTeamRole" android:text="FOUNDER" />
-                        </LinearLayout>
-                    </LinearLayout>
-
-                    <LinearLayout style="@style/AbTeamTile" android:layout_marginStart="5dp">
-                        <FrameLayout style="@style/AbAvatarRing">
-                            <net.kdt.pojavlaunch.ui.AvatarView style="@style/AbAvatar" android:src="@drawable/cs_team_ender" />
-                        </FrameLayout>
-                        <LinearLayout style="@style/AbTeamTextCol">
-                            <TextView style="@style/AbTeamName" android:text="ENDER" />
-                            <TextView style="@style/AbTeamRole" android:text="FOUNDER" />
-                        </LinearLayout>
+                <LinearLayout style="@style/AbTeamTile">
+                    <FrameLayout style="@style/AbAvatarRing">
+                        <net.kdt.pojavlaunch.ui.AvatarView style="@style/AbAvatar" android:src="@drawable/cs_logo" />
+                    </FrameLayout>
+                    <LinearLayout style="@style/AbTeamTextCol">
+                        <TextView style="@style/AbTeamName" android:text="REMON FRANCIS" />
+                        <TextView style="@style/AbTeamRole" android:text="CREATOR AND DEVELOPER" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -263,10 +196,7 @@
                     <TextView style="@style/AbSectionMeta" android:text="@string/cs_about_credit_badge" />
                 </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/about_pojav_card"
-                    style="@style/AbLineageCard">
-
+                <LinearLayout android:id="@+id/about_pojav_card" style="@style/AbLineageCard">
                     <FrameLayout style="@style/AbLineageIconWell">
                         <ImageView style="@style/AbLineageIcon" android:src="@drawable/pojav_logo" />
                     </FrameLayout>
@@ -281,7 +211,6 @@
                     android:id="@+id/about_amethyst_card"
                     style="@style/AbLineageCard"
                     android:layout_marginTop="10dp">
-
                     <FrameLayout style="@style/AbLineageIconWell">
                         <ImageView style="@style/AbLineageIcon" android:src="@drawable/amethyst_logo" />
                     </FrameLayout>
