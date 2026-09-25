@@ -48,7 +48,7 @@ public class ServerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         if (viewType == TYPE_FEATURED) {
             FeaturedVH h = new FeaturedVH(inflater.inflate(R.layout.item_server_featured, p, false));
             net.kdt.pojavlaunch.UiMotion.pressTiltFeedback(h.itemView);
-            net.kdt.pojavlaunch.UiMotion.pressFeedback(h.btnPlay, h.btnDiscord);
+            net.kdt.pojavlaunch.UiMotion.pressFeedback(h.btnPlay);
             return h;
         }
         VH h = new VH(inflater.inflate(R.layout.item_server_card, p, false));
@@ -104,18 +104,6 @@ public class ServerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             ServerPlayDialog.press(v);
             if (listener != null) listener.onJoin(e);
         });
-        // Only servers that actually have a community link get the button - a button that
-        // opens nothing is worse than no button.
-        final String discordUrl = item != null ? item.discordUrl : null;
-        if (discordUrl == null || discordUrl.isEmpty()) {
-            h.btnDiscord.setVisibility(View.GONE);
-        } else {
-            h.btnDiscord.setVisibility(View.VISIBLE);
-            h.btnDiscord.setOnClickListener(v -> {
-                ServerPlayDialog.press(v);
-                ServerPlayDialog.openDiscord(v.getContext(), discordUrl);
-            });
-        }
         h.itemView.setOnClickListener(v -> { if (listener != null) listener.onJoin(e); });
 
         // ── entrance: card lifts in, icon pops, body fades up ──
@@ -135,7 +123,6 @@ public class ServerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         fadeUp(h.address, 190);
         fadeUp(h.motd, 220);
         fadeUp(h.btnPlay, 260);
-        fadeUp(h.btnDiscord, 290);
 
         startShine(h.shine);
         startGlow(h.glow);
@@ -300,14 +287,14 @@ public class ServerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     }
 
     static class FeaturedVH extends RecyclerView.ViewHolder {
-        TextView name, address, motd, ping, players, version, btnPlay, btnDiscord;
+        TextView name, address, motd, ping, players, version, btnPlay;
         ImageView icon, banner;
         View glow, shine, iconCard;
         FeaturedVH(View v){ super(v);
             name=v.findViewById(R.id.fs_name); address=v.findViewById(R.id.fs_address);
             motd=v.findViewById(R.id.fs_motd); ping=v.findViewById(R.id.fs_ping);
             players=v.findViewById(R.id.fs_players); version=v.findViewById(R.id.fs_version);
-            btnPlay=v.findViewById(R.id.fs_btn_play); btnDiscord=v.findViewById(R.id.fs_btn_discord);
+            btnPlay=v.findViewById(R.id.fs_btn_play);
             icon=v.findViewById(R.id.fs_icon); banner=v.findViewById(R.id.fs_banner);
             iconCard=v.findViewById(R.id.fs_icon_card);
             glow=v.findViewById(R.id.fs_glow); shine=v.findViewById(R.id.fs_shine);
