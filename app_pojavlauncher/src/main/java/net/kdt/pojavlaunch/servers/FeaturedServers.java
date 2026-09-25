@@ -25,26 +25,23 @@ import java.util.Locale;
  */
 public final class FeaturedServers {
 
-    /** One built-in server: identity, artwork and the optional community button. */
+    /** One built-in server: identity and artwork. */
     public static final class Item {
         public final String address;
         public final String host;
         public final int port;
         public final String name;
         public final String tagline;
-        /** null when this server has no community link — the button is then not shown at all. */
-        public final String discordUrl;
         public final int logoRes;
         public final int bannerRes;
 
-        Item(String host, int port, String name, String tagline, String discordUrl,
+        Item(String host, int port, String name, String tagline,
              int logoRes, int bannerRes) {
             this.host = host;
             this.port = port;
             this.address = host + ':' + port;
             this.name = name;
             this.tagline = tagline;
-            this.discordUrl = discordUrl;
             this.logoRes = logoRes;
             this.bannerRes = bannerRes;
         }
@@ -66,7 +63,6 @@ public final class FeaturedServers {
         // Phase 8: PlantMC removed from the built-in list (user request).
         l.add(new Item("play.indianpvp.fun", 19015, "Indian PvP & Lifesteal",
                 "PvP \u2022 Grind \u2022 Steal \u2022 Dominate",
-                null,
                 R.drawable.featured_indianpvp_logo,
                 R.drawable.featured_indianpvp_banner));
         return Collections.unmodifiableList(l);
