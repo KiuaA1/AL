@@ -245,8 +245,8 @@ public class LauncherHomeFragment extends Fragment implements DragTutorialHost {
                 0, 0, 0.94f, 0, 0,
                 0, 0, 0, 1, 0});
         android.graphics.ColorMatrixColorFilter filter = new android.graphics.ColorMatrixColorFilter(cm);
-        mBgA.setColorFilter(filter);
-        mBgB.setColorFilter(filter);
+        mBgA.setColorFilter(null);
+        mBgB.setColorFilter(null);
 
         playEntrance(view);
 
@@ -965,9 +965,9 @@ public class LauncherHomeFragment extends Fragment implements DragTutorialHost {
         if (next == null) {
             // Elegant Minecraft-themed fallback.
             next = androidx.core.content.ContextCompat.getDrawable(requireContext(),
-                    R.drawable.bg_hero_minecraft);
+                    R.drawable.bg_al_space);
         }
-        final float target = 0.55f;
+        final float target = 0.92f;
         ImageView incoming = mBgFrontIsA ? mBgB : mBgA;
         ImageView outgoing = mBgFrontIsA ? mBgA : mBgB;
         incoming.setImageDrawable(next);
