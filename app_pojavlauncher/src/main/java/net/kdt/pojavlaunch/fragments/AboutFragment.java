@@ -28,9 +28,8 @@ public class AboutFragment extends Fragment {
     public static final String TAG = "AboutFragment";
 
     // One source of truth (Phase 8): the home brand cluster uses the same links.
-    private static final String URL_DISCORD = net.kdt.pojavlaunch.CsLinks.DISCORD;
-    private static final String URL_WEBSITE = net.kdt.pojavlaunch.CsLinks.WEBSITE;
-    private static final String URL_GITHUB = net.kdt.pojavlaunch.CsLinks.GITHUB;
+    private static final String URL_WEBSITE = net.kdt.pojavlaunch.ALLinks.WEBSITE;
+    private static final String URL_GITHUB = net.kdt.pojavlaunch.ALLinks.GITHUB;
 
     private final Handler mHandler = new Handler(Looper.getMainLooper());
 
@@ -71,7 +70,6 @@ public class AboutFragment extends Fragment {
                 });
 
         // Links
-        wireLink(view, R.id.about_link_discord, URL_DISCORD);
         wireLink(view, R.id.about_link_website, URL_WEBSITE);
         wireLink(view, R.id.about_link_github, URL_GITHUB);
 
@@ -91,7 +89,7 @@ public class AboutFragment extends Fragment {
                             .start();
                 }
                 // Hero logo pops in with a jelly overshoot
-                View logo = view.findViewById(R.id.about_cs_logo);
+                View logo = view.findViewById(R.id.about_al_logo);
                 if (logo != null) UiMotion.popIn(logo);
 
                 // Staggered cascade: hero → credits → links → legal
@@ -99,9 +97,8 @@ public class AboutFragment extends Fragment {
                 cascade(view.findViewById(R.id.about_pojav_card), 170);
                 cascade(view.findViewById(R.id.about_amethyst_card), 240);
                 cascade(view.findViewById(R.id.about_links_heading), 310);
-                cascade(view.findViewById(R.id.about_link_discord), 370);
-                cascade(view.findViewById(R.id.about_link_website), 420);
-                cascade(view.findViewById(R.id.about_link_github), 470);
+                cascade(view.findViewById(R.id.about_link_website), 370);
+                cascade(view.findViewById(R.id.about_link_github), 420);
                 cascade(view.findViewById(R.id.about_legal_heading), 530);
                 cascade(view.findViewById(R.id.about_legal_card), 590);
 
