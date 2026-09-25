@@ -119,8 +119,9 @@ public class CreationTypeDialog extends DialogFragment {
         if (optNormal != null) optNormal.setOnClickListener(v -> pickAndGo(v, rows, () ->
                 navigate(VersionCreateFragment.class, VersionCreateFragment.TAG)));
 
-        if (optClient != null) optClient.setOnClickListener(v -> pickAndGo(v, rows, () ->
-                navigate(CsClientVersionsFragment.class, CsClientVersionsFragment.TAG)));
+        if (optClient != null) {
+            optClient.setVisibility(View.GONE);
+        }
 
         if (optModpack != null) optModpack.setOnClickListener(v -> pickAndGo(v, rows, () -> {
             if (!Tools.hasOnlineProfile()) {
