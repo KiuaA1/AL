@@ -19,7 +19,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0B0713">
+    android:background="#010207">
 
     <!-- Background artwork (two layers for a crossfade when the primary changes) -->
     <ImageView
@@ -27,7 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:alpha="0.55"
+        android:alpha="0.82"
         android:contentDescription="@null"
         tools:src="@drawable/bg_hero_minecraft" />
     <ImageView
@@ -59,25 +59,25 @@
         <LinearLayout
             android:id="@+id/lh_brand_cluster"
             android:layout_width="wrap_content"
-            android:layout_height="44dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/bg_lh_glass"
+            android:layout_height="58dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/transparent"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:paddingStart="6dp"
-            android:paddingEnd="10dp"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <FrameLayout
                 android:id="@+id/lh_brand_mark"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
                 android:background="@drawable/bg_lh_brand_mark">
                 <ImageView
-                    android:layout_width="22dp"
-                    android:layout_height="22dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:contentDescription="@null"
                     android:src="@drawable/kiua_icon" />
@@ -86,7 +86,7 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="14dp"
                 android:orientation="vertical">
                 <TextView
                     android:id="@+id/lh_brand_name"
@@ -96,13 +96,14 @@
                     android:letterSpacing="0.06"
                     android:maxLines="1"
                     android:singleLine="true"
-                    android:text="AL LAUNCHER"
+                    android:text="A launcher"
                     android:textColor="#FFFFFF"
-                    android:textSize="12sp"
+                    android:textSize="22sp"
                     android:textStyle="bold"
                     tools:ignore="HardcodedText,Deprecated" />
                 <TextView
                     android:id="@+id/lh_brand_sub"
+                    android:visibility="gone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
@@ -128,19 +129,19 @@
             android:paddingHorizontal="11dp"
             android:clickable="true"
             android:focusable="true"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="12dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
                 android:id="@+id/lh_account_head"
-                android:layout_width="29dp"
-                android:layout_height="29dp"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
                 android:scaleType="centerCrop"
                 android:background="@drawable/bg_lh_card_icon"
                 android:padding="2dp"
-                android:src="@drawable/ic_profile_player"
+                android:src="@drawable/ic_mc_block"
                 app:tint="#8B5CF6"
                 android:contentDescription="Account" />
 
@@ -148,7 +149,7 @@
                 android:id="@+id/lh_account_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="10dp"
                 android:maxWidth="110dp"
                 android:singleLine="true"
                 android:ellipsize="end"
@@ -202,7 +203,7 @@
             android:id="@+id/lh_hero_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="22dp"
             android:maxWidth="230dp"
             android:singleLine="true"
             android:ellipsize="end"
@@ -368,7 +369,7 @@
             <!-- Signature launch capsule: wave/glow morph + STOP-cancel. -->
             <net.kdt.pojavlaunch.ui.PremiumPlayButtonView
                 android:id="@+id/lh_launch_button"
-                android:layout_width="168dp"
+                android:layout_width="190dp"
                 android:layout_height="@dimen/lh_launch_button_h"
                 android:contentDescription="Launch Minecraft">
 
