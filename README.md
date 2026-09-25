@@ -1,6 +1,6 @@
-CS Launcher Plus
+A Launcher
 
-CS Launcher Plus is a powerful Minecraft launcher focused on performance, customisation, and a smooth user experience.
+A Launcher is a powerful Minecraft launcher focused on performance, customisation, and a smooth user experience.
 
 Features
 
@@ -27,7 +27,7 @@ The Control Customisation Settings Button has additional customisation options.
 
 Performance Improvements
 
-CS Launcher Plus includes major performance and optimisation improvements for a faster, smoother, and more responsive experience.
+A Launcher includes major performance and optimisation improvements for a faster, smoother, and more responsive experience.
 
 Bug Fixes
 
@@ -35,9 +35,9 @@ A large number of bugs and stability issues have been fixed in this release.
 
 Download
 
-Download the latest version of CS Launcher Plus from GitHub Releases:
+Download the latest version of A Launcher from GitHub Releases:
 
-"Download the Latest Release" (https://github.com/craftstudioteam/CS-LAUNCHER-PLUS/releases)
+"Download the Latest Release" (https://github.com/KiuaA1/AL/releases)
 
 Latest Release
 
@@ -45,9 +45,9 @@ Check the Releases section for the latest version, changelog, and available down
 
 Community
 
-Stay updated with CS Launcher Plus and follow the project for future updates, improvements, and new features.
+Stay updated with A Launcher and follow the project for future updates, improvements, and new features.
 
 ---
 
-CS Launcher Plus
+A Launcher
 Faster. Smoother. More Customisable.
