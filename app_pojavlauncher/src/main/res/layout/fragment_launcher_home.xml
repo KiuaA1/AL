@@ -72,12 +72,12 @@
 
             <FrameLayout
                 android:id="@+id/lh_brand_mark"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:background="@drawable/bg_lh_brand_mark">
                 <ImageView
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
                     android:layout_gravity="center"
                     android:contentDescription="@null"
                     android:src="@mipmap/ic_launcher_foreground" />
@@ -86,7 +86,7 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="14dp"
+                android:layout_marginStart="18dp"
                 android:orientation="vertical">
                 <TextView
                     android:id="@+id/lh_brand_name"
@@ -98,7 +98,7 @@
                     android:singleLine="true"
                     android:text="A launcher"
                     android:textColor="#FFFFFF"
-                    android:textSize="32sp"
+                    android:textSize="38sp"
                     android:textStyle="normal"
                     tools:ignore="HardcodedText,Deprecated" />
                 <TextView
@@ -122,40 +122,40 @@
         <LinearLayout
             android:id="@+id/lh_account_chip"
             android:layout_width="wrap_content"
-            android:layout_height="44dp"
+            android:layout_height="74dp"
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:background="@drawable/bg_lh_glass"
-            android:paddingHorizontal="11dp"
+            android:paddingHorizontal="16dp"
             android:clickable="true"
             android:focusable="true"
             android:layout_marginEnd="16dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="18dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
                 android:id="@+id/lh_account_head"
-                android:layout_width="34dp"
-                android:layout_height="34dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:scaleType="centerCrop"
                 android:background="@drawable/bg_lh_card_icon"
                 android:padding="2dp"
                 android:src="@drawable/ic_mc_block"
-                app:tint="#8B5CF6"
+                app:tint="#D7D7D9"
                 android:contentDescription="Account" />
 
             <TextView
                 android:id="@+id/lh_account_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:maxWidth="110dp"
+                android:layout_marginStart="14dp"
+                android:maxWidth="130dp"
                 android:singleLine="true"
                 android:ellipsize="end"
                 android:text="Player"
                 android:textColor="#FFFFFF"
-                android:textSize="13sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 android:includeFontPadding="false" />
 
@@ -163,10 +163,10 @@
                 android:id="@+id/lh_account_type"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="7dp"
+                android:layout_marginStart="10dp"
                 android:text="LOCAL"
                 android:textColor="#FFFFFF"
-                android:textSize="8.5sp"
+                android:textSize="10sp"
                 android:textStyle="bold"
                 android:letterSpacing="0.06"
                 android:paddingHorizontal="7dp"
@@ -177,7 +177,7 @@
             <ImageView
                 android:layout_width="13dp"
                 android:layout_height="13dp"
-                android:layout_marginStart="4dp"
+                android:layout_marginStart="8dp"
                 android:src="@drawable/ic_chevron_down"
                 app:tint="#9A91B5"
                 android:contentDescription="@null" />
@@ -203,16 +203,16 @@
             android:id="@+id/lh_hero_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="22dp"
+            android:layout_marginTop="34dp"
             android:maxWidth="230dp"
             android:singleLine="true"
             android:ellipsize="end"
             android:text=""
             android:fontFamily="@font/minecraftia"
             android:textColor="#FFFFFF"
-            android:textSize="15sp"
-            android:paddingHorizontal="10dp"
-            android:paddingVertical="3dp"
+            android:textSize="20sp"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="7dp"
             android:background="@drawable/bg_lh_nametag"
             android:includeFontPadding="false"
             android:shadowColor="#B3000000"
@@ -369,7 +369,7 @@
             <!-- Signature launch capsule: wave/glow morph + STOP-cancel. -->
             <net.kdt.pojavlaunch.ui.PremiumPlayButtonView
                 android:id="@+id/lh_launch_button"
-                android:layout_width="200dp"
+                android:layout_width="306dp"
                 android:layout_height="@dimen/lh_launch_button_h"
                 android:contentDescription="Launch Minecraft">
 
@@ -379,7 +379,7 @@
                     android:layout_gravity="center"
                     android:orientation="horizontal"
                     android:gravity="center_vertical"
-                    android:paddingHorizontal="24dp">
+                    android:paddingHorizontal="30dp">
 
                     <ImageView
                         android:layout_width="18dp"
@@ -395,7 +395,7 @@
                         android:layout_marginStart="10dp"
                         android:text="LAUNCH"
                         android:textColor="#0E0E11"
-                        android:textSize="15sp"
+                        android:textSize="20sp"
                         android:textStyle="bold"
                         android:letterSpacing="0.12"
                         android:includeFontPadding="false" />
@@ -405,15 +405,15 @@
             <!-- Pencil: opens THIS profile's edit page. -->
             <FrameLayout
                 android:id="@+id/lh_edit_btn"
-                android:layout_width="42dp"
-                android:layout_height="42dp"
-                android:layout_marginStart="10dp"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="16dp"
                 android:background="@drawable/bg_lh_glass"
                 android:clickable="true"
                 android:focusable="true">
                 <ImageView
-                    android:layout_width="18dp"
-                    android:layout_height="18dp"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
                     android:layout_gravity="center"
                     android:src="@drawable/ic_edit_profile"
                     app:tint="#C9C4D8"
@@ -429,9 +429,9 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:background="@drawable/bg_lh_specs_pill"
-            android:paddingHorizontal="12dp"
-            android:paddingVertical="4dp"
-            android:layout_marginBottom="8dp"
+            android:paddingHorizontal="18dp"
+            android:paddingVertical="7dp"
+            android:layout_marginBottom="10dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@id/lh_library">
@@ -486,7 +486,7 @@
             android:id="@+id/lh_library"
             android:layout_width="0dp"
             android:layout_height="@dimen/lh_carousel_height"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="18dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
             android:clipToPadding="false"
