@@ -93,7 +93,7 @@
                         android:id="@+id/modded_profile_bta"
                         android:layout_width="154dp"
                         android:layout_height="134dp"
-                        android:background="@drawable/bg_cs_client_promo_card"
+                        android:background="@drawable/bg_profile_type_card"
                         android:clickable="true"
                         android:focusable="true"
                         android:stateListAnimator="@animator/card_press_anim">
@@ -508,7 +508,7 @@
                         android:layout_width="154dp"
                         android:layout_height="134dp"
                         android:layout_marginStart="10dp"
-                        android:background="@drawable/bg_cs_client_promo_card"
+                        android:background="@drawable/bg_profile_type_card"
                         android:clickable="true"
                         android:focusable="true"
                         android:stateListAnimator="@animator/card_press_anim">
