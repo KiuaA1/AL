@@ -334,7 +334,7 @@
     <string name="cs_about_website_sub">cs-launcher.netlify.app — news, guides &amp; downloads</string>
     <string name="cs_about_github_title">GitHub</string>
     <string name="cs_about_github_sub">craftstudioteam — open source, free forever</string>
-    <string name="cs_about_legal_heading">Legal Notice</string>
+    <string name="cs_about_legal_heading">A Launcher Info</string>
     <string name="cs_about_legal_text">A Launcher is free, open-source software released under the GNU General Public License v3.0 (GPL v3). It is a fork of Amethyst (AngelAuraMC/Amethyst-Android), which itself builds upon PojavLauncher (PojavLauncherTeam/PojavLauncher) and the original Boardwalk by zhuowei. We are deeply grateful to all of these projects and their contributors.
 
 Minecraft is a trademark of Mojang Synergies AB / Microsoft Corporation. A Launcher is an independent community project and is NOT affiliated with, endorsed by, or sponsored by Mojang or Microsoft. All Minecraft assets and content belong to their respective owners. To play online you need a legitimate Minecraft: Java Edition account.
