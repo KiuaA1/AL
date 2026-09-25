@@ -53,7 +53,7 @@ public class AboutFragment extends Fragment {
                     if (clicks >= 20) {
                         clicks = 0;
                         Toast.makeText(requireContext(), "FCM Debug Token Unlocked!", Toast.LENGTH_SHORT).show();
-                        net.kdt.pojavlaunch.remote.CsFirebaseMessagingService.showFcmTokenDebugDialog(requireActivity());
+                        net.kdt.pojavlaunch.remote.ALFirebaseMessagingService.showFcmTokenDebugDialog(requireActivity());
                     }
                 }
             });
