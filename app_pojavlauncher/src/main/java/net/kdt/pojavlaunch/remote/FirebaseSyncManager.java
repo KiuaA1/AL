@@ -139,7 +139,7 @@ public final class FirebaseSyncManager {
         final String db = effectiveDbUrl(ctx);
         if (db.isEmpty()) return;
         try {
-            CsFirebaseMessagingService.initFcm(ctx);
+            ALFirebaseMessagingService.initFcm(ctx);
             FirebaseDatabase dbInst = FirebaseDatabase.getInstance(db);
             try { dbInst.setPersistenceEnabled(true); } catch (Throwable ignored) {}
             attach(dbInst, "/announcements", json -> { sAnnouncements = json; persistCache(ctx); notifyHomeBanner(); });
