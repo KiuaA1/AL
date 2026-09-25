@@ -42,6 +42,6 @@
     <dimen name="lh_player_h">172dp</dimen>
     <dimen name="lh_card_width">230dp</dimen>
     <dimen name="lh_card_height">108dp</dimen>
-    <dimen name="lh_carousel_height">72dp</dimen>
+    <dimen name="lh_carousel_height">62dp</dimen>
     <dimen name="lh_launch_button_h">56dp</dimen>
 </resources>
