@@ -4,8 +4,8 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/lib_card_root"
-    android:layout_width="230dp"
-    android:layout_height="48dp"
+    android:layout_width="235dp"
+    android:layout_height="56dp"
     android:layout_marginHorizontal="4dp"
     android:background="@drawable/bg_lh_glass"
     android:stateListAnimator="@animator/card_press_anim"
@@ -51,8 +51,8 @@
 
         <ImageView
             android:id="@+id/lib_card_icon"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
             android:scaleType="fitCenter"
             android:contentDescription="@null" />
 
