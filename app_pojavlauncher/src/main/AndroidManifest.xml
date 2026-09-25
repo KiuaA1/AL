@@ -204,7 +204,7 @@
         </service>
 
         <service
-            android:name="net.kdt.pojavlaunch.remote.CsFirebaseMessagingService"
+            android:name="net.kdt.pojavlaunch.remote.ALFirebaseMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
