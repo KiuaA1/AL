@@ -24,7 +24,7 @@ import net.kdt.pojavlaunch.UiMotion;
  * Creation-type chooser — the single popup behind the floating "+" button.
  *
  *   Normal Version → {@link VersionCreateFragment} (full-screen guided creation)
- *   Client         → {@link CsClientVersionsFragment} (existing CS Client flow)
+ *   Client         → removed (CS Client feature retired)
  *   Mod Pack       → {@link ModpackCreateFragment} (existing browse/import flow)
  *
  * Presentation: a centred graphite card, 460dp wide max and ≈300dp tall, so all
