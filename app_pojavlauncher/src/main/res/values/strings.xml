@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- App name part -->
-    <string name="app_name" translatable="false">A Launcher</string>
+    <string name="app_name" translatable="false">AL Launcher</string>
 
     <!-- Action bar part -->
 
@@ -313,10 +313,10 @@
     <string name="cs_navtip_settings">Settings</string>
 
     <!-- ── Launch screen: black stage + optional user GIF (video removed) ── -->
-    <string name="cs_about_title">About A Launcher</string>
+    <string name="cs_about_title">About AL Launcher</string>
     <string name="cs_launch_color_set">Launch color set</string>
     <string name="cs_launch_color_reset">Launch color reset to black</string>
-    <string name="cs_about_name">A LAUNCHER</string>
+    <string name="cs_about_name">AL LAUNCHER</string>
     <string name="cs_about_tagline">YOUR MINECRAFT. REIMAGINED.</string>
     <string name="cs_about_made_for">MADE WITH ❤ FOR MINECRAFT: JAVA EDITION ON ANDROID</string>
     <string name="cs_about_credits_heading">Built on Legends</string>
@@ -334,13 +334,13 @@
     <string name="cs_about_website_sub">cs-launcher.netlify.app — news, guides &amp; downloads</string>
     <string name="cs_about_github_title">GitHub</string>
     <string name="cs_about_github_sub">craftstudioteam — open source, free forever</string>
-    <string name="cs_about_legal_heading">A Launcher Info</string>
+    <string name="cs_about_legal_heading">AL Launcher Info</string>
     <string name="cs_about_legal_text">A Launcher is free, open-source software released under the GNU General Public License v3.0 (GPL v3). It is a fork of Amethyst (AngelAuraMC/Amethyst-Android), which itself builds upon PojavLauncher (PojavLauncherTeam/PojavLauncher) and the original Boardwalk by zhuowei. We are deeply grateful to all of these projects and their contributors.
 
 Minecraft is a trademark of Mojang Synergies AB / Microsoft Corporation. A Launcher is an independent community project and is NOT affiliated with, endorsed by, or sponsored by Mojang or Microsoft. All Minecraft assets and content belong to their respective owners. To play online you need a legitimate Minecraft: Java Edition account.
 
 Third-party components (GL4ES, MobileGlues, ANGLE, Zink/Mesa, LWJGL, OpenJDK, SDL, and more) remain under their own respective licenses. See the NOTICE and LICENSE files inside the repository for full details.</string>
-    <string name="cs_about_footer">CRAFT STUDIO • FREE FOREVER • MADE WITH PASSION</string>
+    <string name="cs_about_footer">KIUA • AL LAUNCHER • MADE WITH PASSION</string>
     <string name="cs_about_coming_soon">The full About page is coming soon. For now: %1$s</string>
     <string name="cs_launch_gif_title">Launch Screen GIF</string>
     <string name="cs_launch_gif_summary">Launch stays a clean black screen. Pick any GIF from storage to play on it while the game loads (up to 50 MB).</string>
@@ -412,8 +412,8 @@ Third-party components (GL4ES, MobileGlues, ANGLE, Zink/Mesa, LWJGL, OpenJDK, SD
     <string name="pt_neoforge_desc">Next-generation Forge</string>
     <string name="pt_modpack_name">Install Modpack</string>
     <string name="pt_modpack_desc">CurseForge, Modrinth or import a zip</string>
-    <string name="pt_bta_name">CS CLIENT</string>
-    <string name="pt_bta_desc">CS Client • Fabric • Build your profile</string>
+    <string name="pt_bta_name">AL CLIENT</string>
+    <string name="pt_bta_desc">AL Client • Fabric • Build your profile</string>
     <string name="notification_terminate">Terminate</string>
     <string name="notification_game_runs">The game is running!</string>
     <string name="folder_dialog_create">Create</string>
