@@ -39,7 +39,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:225740234992:android:012ded5ea88612925ee235",
         "android_client_info": {
-          "package_name": "com.craftstudio.cslauncher"
+          "package_name": "com.kiua.alauncher"
         }
       },
       "oauth_client": [
@@ -68,7 +68,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:225740234992:android:1932a05cdd36908f5ee235",
         "android_client_info": {
-          "package_name": "com.cslaucher.plus"
+          "package_name": "com.kiua.alauncher"
         }
       },
       "oauth_client": [
