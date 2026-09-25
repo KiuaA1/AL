@@ -3,8 +3,8 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/lib_create_root"
-    android:layout_width="230dp"
-    android:layout_height="48dp"
+    android:layout_width="320dp"
+    android:layout_height="84dp"
     android:layout_marginHorizontal="4dp"
     android:background="@drawable/bg_lh_create_card"
     android:clipToOutline="true"
@@ -19,8 +19,8 @@
         android:gravity="center">
 
         <ImageView
-            android:layout_width="17dp"
-            android:layout_height="17dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
             android:src="@drawable/ic_add"
             app:tint="#C9B8FF"
             android:contentDescription="@null" />
@@ -28,10 +28,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="12dp"
             android:text="New Instance"
             android:textColor="#C9B8FF"
-            android:textSize="12sp"
+            android:textSize="18sp"
             android:textStyle="bold"
             android:letterSpacing="0.04"
             android:includeFontPadding="false" />
