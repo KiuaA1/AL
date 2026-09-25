@@ -1,4 +1,4 @@
-name: Build CS Launcher Plus APK
+name: Build AL Launcher APK
 
 on:
   workflow_dispatch:
@@ -55,7 +55,7 @@ jobs:
                 "client_info": {
                   "mobilesdk_app_id": "1:000000000000:android:0000000000000000000000",
                   "android_client_info": {
-                    "package_name": "com.cslaucher.plus"
+                    "package_name": "com.kiua.alauncher"
                   }
                 },
                 "oauth_client": [],
@@ -94,7 +94,7 @@ jobs:
       - name: Upload Release APK
         uses: actions/upload-artifact@v4
         with:
-          name: CS-Launcher-Plus-Release
+          name: AL-Launcher-Release
           path: |
             app_pojavlauncher/build/outputs/apk/release/*.apk
           if-no-files-found: error
