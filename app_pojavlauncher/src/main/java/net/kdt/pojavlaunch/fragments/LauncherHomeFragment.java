@@ -204,26 +204,10 @@ public class LauncherHomeFragment extends Fragment implements DragTutorialHost {
 
         mAccountChip.setOnClickListener(v -> switchAccount());
 
-        // ── Brand cluster (top-left, Phase 8): YouTube red / Discord blurple.
-        //    Slides in from the left while the account chip lands on the right;
-        //    the pills pop one after another (anime stagger). ──
+        // AL Launcher brand cluster.
         View brand = view.findViewById(R.id.lh_brand_cluster);
-        View yt = view.findViewById(R.id.lh_btn_youtube);
-        View dc = view.findViewById(R.id.lh_btn_discord);
-        if (yt != null) yt.setOnClickListener(v -> {
-            net.kdt.pojavlaunch.Anime.pop(v);
-            v.performHapticFeedback(HapticFeedbackConstants.KEYBOARD_TAP);
-            net.kdt.pojavlaunch.CsLinks.open(v.getContext(), net.kdt.pojavlaunch.CsLinks.YOUTUBE);
-        });
-        if (dc != null) dc.setOnClickListener(v -> {
-            net.kdt.pojavlaunch.Anime.pop(v);
-            v.performHapticFeedback(HapticFeedbackConstants.KEYBOARD_TAP);
-            net.kdt.pojavlaunch.CsLinks.open(v.getContext(), net.kdt.pojavlaunch.CsLinks.DISCORD);
-        });
         if (brand != null) {
             net.kdt.pojavlaunch.Anime.in(brand, net.kdt.pojavlaunch.Anime.Fx.FADE_RIGHT, 80, 620, net.kdt.pojavlaunch.Anime.OUT_EXPO);
-            net.kdt.pojavlaunch.Anime.in(yt, net.kdt.pojavlaunch.Anime.Fx.POP, 420, 520, net.kdt.pojavlaunch.Anime.OUT_BACK);
-            net.kdt.pojavlaunch.Anime.in(dc, net.kdt.pojavlaunch.Anime.Fx.POP, 500, 520, net.kdt.pojavlaunch.Anime.OUT_BACK);
             net.kdt.pojavlaunch.Anime.in(mAccountChip, net.kdt.pojavlaunch.Anime.Fx.FADE_LEFT, 80, 620, net.kdt.pojavlaunch.Anime.OUT_EXPO);
         }
 
